@@ -5,7 +5,9 @@
 	<title>Step07_Example.html</title>
 	<style>
 		.wrapper{
-			/* 자식 div 를 원하는 위치에 마음대로 배치하기 위해 */
+			/* 자식 div 를 원하는 위치에 마음대로 배치하기 위해 
+				position: relative
+			*/
 			position: relative;
 			width: 500px;
 			height: 500px;
@@ -13,6 +15,7 @@
 			border: 1px solid red
 		}
 		.box{
+			/* 부모가 relative */
 			position: absolute;
 			width: 50px;
 			height: 50px;
@@ -41,6 +44,7 @@
 		/* .wrapper div 전체 덮기 */
 		#test{
 			background-color: #000;
+			/* top, left, right, bottom 모두 0px으로 하면 늘어난다. */
 			position: absolute;
 			top: 0;
 			left: 0;
